@@ -9,7 +9,7 @@ export const Header = () => {
     const [categorias,getCategorias] = useState([]);
 
     useEffect(() => {
-        axios.get('http://react.professorburnes.com.br/categoria')
+        axios.get('https://react.professorburnes.com.br/categoria')
         .then((response)=> {
             getCategorias(response.data);
         });
