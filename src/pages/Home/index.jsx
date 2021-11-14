@@ -9,7 +9,7 @@ export const Home = () => {
     const [produtos,getProdutos] = useState([]);
 
     useEffect(() => {
-        axios.get('http://react.professorburnes.com.br/')
+        axios.get('https://react.professorburnes.com.br/')
         .then((response) => {
             getProdutos(response.data);
         })
